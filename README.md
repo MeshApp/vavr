@@ -5,7 +5,8 @@
 
 # [Javaslang](http://javaslang.io/)
 
-__This fork just renames λ.java to Lambda.java, which makes javaslang 2.0.6 (now 2.0.7) work on AWS Lambda.__
+_This fork just renames λ.java to Lambda.java, which makes javaslang 2.0.6 (now 2.0.7) work on AWS Lambda._
+_To publish to the private S3 repo: ensure `~/.m2/settings.xml` has the AWS credentials in `s3.artifacts.release` (like [this](https://github.com/endeavor85/endeavor85.github.io/wiki/Maven-Deploy-Artifacts-to-S3-Bucket)). Then run `mvn deploy`._
 
 Feature-rich & self-contained functional programming in Java&trade; 8 and above.
 Javaslang is a functional library for Java 8+ that provides persistent data types and functional control structures. Because Javaslang does not depend on any libraries (other than the JVM) you can easily add it as standalone .jar to your classpath.

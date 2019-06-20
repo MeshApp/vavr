@@ -82,6 +82,7 @@ Note: The maven build currently needs to be started from the javaslang root dir
         <maven.versions.version>2.1</maven.versions.version>
         <scala.maven.version>3.2.2</scala.maven.version>
         <scala.version>2.11.7</scala.version>
+        <artifactrepo.url>maven.meshapp.net</artifactrepo.url>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -220,6 +221,13 @@ Note: The maven build currently needs to be started from the javaslang root dir
                 </plugin>
             </plugins>
         </pluginManagement>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
     </build>
     <profiles>
         <profile>
@@ -443,4 +451,10 @@ Note: The maven build currently needs to be started from the javaslang root dir
             </build>
         </profile>
     </profiles>
+    <distributionManagement>
+        <repository>
+            <id>s3.artifacts.release</id>
+            <url>s3://${artifactrepo.url}/</url>
+        </repository>
+    </distributionManagement>
 </project>

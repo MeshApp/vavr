@@ -7,13 +7,6 @@
     <usePluginRegistry/>
     <offline/>
     <pluginGroups/>
-    <servers>
-        <server>
-            <id>sonatype-nexus-snapshots</id>
-            <username>${env.SONATYPE_USER}</username>
-            <password>${env.SONATYPE_PASS}</password>
-        </server>
-    </servers>
     <mirrors/>
     <proxies/>
     <profiles/>
