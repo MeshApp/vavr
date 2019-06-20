@@ -18,7 +18,7 @@ import java.util.Map;
  * @author Daniel Dietrich
  * @since 1.0.0
  */
-public interface λ<R> extends Serializable {
+public interface Lambda<R> extends Serializable {
 
     /**
      * The <a href="https://docs.oracle.com/javase/8/docs/api/index.html">serial version uid</a>.
@@ -36,21 +36,21 @@ public interface λ<R> extends Serializable {
      *
      * @return a curried function equivalent to this.
      */
-    λ<?> curried();
+    Lambda<?> curried();
 
     /**
      * Returns a tupled version of this function.
      *
      * @return a tupled function equivalent to this.
      */
-    λ<R> tupled();
+    Lambda<R> tupled();
 
     /**
      * Returns a reversed version of this function. This may be useful in a recursive context.
      *
      * @return a reversed function equivalent to this.
      */
-    λ<R> reversed();
+    Lambda<R> reversed();
 
     /**
      * Returns a memoizing version of this function, which computes the return value for given arguments only one time.
@@ -60,7 +60,7 @@ public interface λ<R> extends Serializable {
      *
      * @return a memoizing function equivalent to this.
      */
-    λ<R> memoized();
+    Lambda<R> memoized();
 
     /**
      * Checks if this function is memoizing (= caching) computed values.

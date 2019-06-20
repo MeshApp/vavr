@@ -25,7 +25,7 @@ import javaslang.control.Try;
  * @since 1.1.0
  */
 @FunctionalInterface
-public interface Function1<T1, R> extends λ<R>, Function<T1, R> {
+public interface Function1<T1, R> extends Lambda<R>, Function<T1, R> {
 
     /**
      * The <a href="https://docs.oracle.com/javase/8/docs/api/index.html">serial version uid</a>.

@@ -633,7 +633,7 @@ def generateMainClasses(): Unit = {
            * @since 1.1.0
            */
           @FunctionalInterface
-          public interface $className$fullGenerics extends λ<R>$additionalExtends {
+          public interface $className$fullGenerics extends Lambda<R>$additionalExtends {
 
               /$javadoc
                * The <a href="https://docs.oracle.com/javase/8/docs/api/index.html">serial version uid</a>.

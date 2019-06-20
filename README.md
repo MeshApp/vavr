@@ -5,6 +5,8 @@
 
 # [Javaslang](http://javaslang.io/)
 
+__This fork just renames λ.java to Lambda.java, which makes javaslang 2.0.6 (now 2.0.7) work on AWS Lambda.__
+
 Feature-rich & self-contained functional programming in Java&trade; 8 and above.
 Javaslang is a functional library for Java 8+ that provides persistent data types and functional control structures. Because Javaslang does not depend on any libraries (other than the JVM) you can easily add it as standalone .jar to your classpath.
 

@@ -29,7 +29,7 @@ import javaslang.control.Try;
  * @since 1.1.0
  */
 @FunctionalInterface
-public interface CheckedFunction6<T1, T2, T3, T4, T5, T6, R> extends λ<R> {
+public interface CheckedFunction6<T1, T2, T3, T4, T5, T6, R> extends Lambda<R> {
 
     /**
      * The <a href="https://docs.oracle.com/javase/8/docs/api/index.html">serial version uid</a>.
